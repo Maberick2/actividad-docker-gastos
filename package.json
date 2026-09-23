@@ -1,0 +1,7 @@
+{
+  "name": "docker-actividad-gastos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"start": "node src.js", "test": "node --test", "coverage": "node --experimental-test-coverage --test"},
+  "engines": {"node": ">=22"}
+}
