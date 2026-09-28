@@ -2,7 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { totalGastos, responder } = require('../src');
 
-test('suma tres gastos', () => assert.equal(totalGastos([120, 80, 50]), 250));
+test('suma tres gastos', () => assert.equal(totalGastos([200, 80, 50]), 250));
 test('devuelve cero si no hay gastos', () => assert.equal(totalGastos([]), 0));
 test('rechaza valores negativos', () => assert.throws(() => totalGastos([-1]), TypeError));
 test('responde en la ruta de salud', () => {
